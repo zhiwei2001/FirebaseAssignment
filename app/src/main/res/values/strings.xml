@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">FirebaseAssignment</string>
+    <string name="send_message">Sent Sucessfully</string>
+</resources>
