@@ -62,13 +62,13 @@ public class Men extends AppCompatActivity {
 
                                 String name=mname.getText().toString();
                                 String price=mprice.getText().toString();
+
                                 Drawable mDrawable = mimageView.getDrawable();
                                 Bitmap mBitmap = ((BitmapDrawable)mDrawable).getBitmap();
-                                Intent intent=new  Intent(view.getContext(),ProductDetailsActivity.class);
                                 ByteArrayOutputStream stream = new ByteArrayOutputStream();
                                 mBitmap.compress(Bitmap.CompressFormat.PNG,100,stream);
                                 byte[]bytes = stream.toByteArray();
-
+                                Intent intent=new  Intent(view.getContext(),ProductDetailsActivity.class);
                                 intent.putExtra("ImageProd1",bytes);
                                 intent.putExtra("NameProd1",name);
                                 intent.putExtra("PriceProd1",price);

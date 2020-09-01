@@ -1,7 +1,8 @@
 package com.example.firebaseassignment;
 
 public class Member {
-    String NameProd1,PriceProd1,ImageProd1;
+    String NameProd1,PriceProd1;
+    String ImageProd1;
     public Member(){}
 
     public String getNameProd1() {
